@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/*** 元サイトの記述を打ち消す指定 ***/
+html {
+    scroll-behavior: smooth !important;
+}
+body {
+    min-width: auto !important;
+    margin: 0 !important;
+}
+
+/*** 全体の指定 ***/
+.custom_page {
+    font-family: "Noto Serif JP", serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+/* # 以下、全てのセレクタに「.custom_page」を付加して納品のこと */
+/* # 入れ子にしてこの変換ツールを使用：https://www.sassmeister.com/ */
+
+/* # =================================================================
+   # 共通指定・よく使う指定
+   # ================================================================= */
+   .custom_page .sans {
+     font-family: "Noto Sans JP", sans-serif;
+   }
+   .custom_page .serif {
+     font-family: "Noto Serif JP", serif;
+   }
+   @media (min-width: 600px) {
+     .custom_page .sp-only {
+       display: none;
+     }
+   }
+   @media (max-width: 599px) {
+     .custom_page .pc-only {
+       display: none;
+     }
+   }
+   .custom_page a {
+     display: block;
+     overflow: hidden;
+   }
+   .custom_page img {
+     display: block;
+     width: 100%;
+     transition: 0.3s;
+   }
+   .custom_page a img:hover {
+     transform: scale(1.1);
+   }
+   .custom_page .img-full {
+     width: 100%;
+   }
+   .custom_page .img-normal {
+     width: 100%;
+     max-width: 900px;
+     margin: auto;
+   }
+   .custom_page p span {
+     display: inline-block;
+   }
+   .custom_page a {
+     font-family: "Noto Sans JP", sans-serif;
+   }
+   .custom_page p {
+     font-family: "Noto Sans JP", sans-serif;
+   }
+   .custom_page .top_lead {
+     text-align: center;
+     margin: 70px 0;
+   }
+   .custom_page .top_lead h3 {
+     font-size: 25px;
+     font-family: "Noto Sans JP", sans-serif;
+     font-weight: 500;
+     margin-bottom: 20px;
+   }
+   .custom_page .top_lead h3 span {
+     display: inline-block;
+   }
+   .custom_page .top_lead p {
+     font-size: 16px;
+     font-family: "Noto Sans JP", sans-serif;
+     font-weight: 300;
+   }
+   .custom_page .number_img {
+     width: 100%;
+     max-width: 70px;
+     margin: 50px 0 15px;
+   }
+   .custom_page .top-columns {
+     display: flex;
+     width: 90%;
+     max-width: 1000px;
+     margin: 0 auto;
+     justify-content: space-between;
+   }
+   .custom_page .top-columns p {
+     color: black;
+     text-align: center;
+     font-size: 16px;
+     margin: 15px 0;
+   }
+   .custom_page .top-columns span {
+     display: block;
+     overflow: hidden;
+   }
+   .custom_page .top-columns a {
+     flex-basis: 32.5%;
+     text-decoration: none;
+   }
+   .custom_page .top-columns a:hover span img {
+     transform: scale(1.1);
+   }
+   .custom_page .top-columns a img:hover {
+     transform: none;
+   }
+   .custom_page .top-columns a:hover .btm_btn {
+     opacity: 0.8;
+   }
+   .custom_page .btm_btn {
+     transition: 0.3s;
+     position: relative;
+     top: 0;
+   }
+   .custom_page .btm_btn:hover {
+     transform: unset;
+   }
+   @media (min-width: 980px) {
+     .custom_page .lead_br {
+       display: block;
+     }
+   }
+   @media (max-width: 979px) {
+     .custom_page #top {
+       text-align: center;
+     }
+     .custom_page .top_lead {
+       width: 100%;
+       margin: auto;
+     }
+     .custom_page .top_lead h3 {
+       font-size: 23px;
+       text-align: center;
+       margin-top: 40px;
+     }
+     .custom_page .top_lead p {
+       width: 95%;
+       margin: auto;
+       font-size: 14px;
+     }
+     .custom_page #top h2 {
+       font-size: 40px;
+     }
+     .custom_page .number_img {
+       width: 30%;
+     }
+     .custom_page .top-columns p {
+       font-size: 1.7vw;
+     }
+   }
+   @media (max-width: 549px) {
+     .custom_page .top_lead h3 {
+       font-size: 5vw;
+     }
+     .custom_page .top_lead p {
+       font-size: 2.9vw;
+     }
+     .custom_page .top-columns p {
+       font-size: 2vw;
+     }
+   }
+   .custom_page #nobilia01,
+   .custom_page #coat02,
+   .custom_page #coat03 {
+     width: 90%;
+     max-width: 1000px;
+     margin: 0 auto;
+   }
+   .custom_page #nobilia01 a,
+   .custom_page #coat02 a,
+   .custom_page #coat03 a {
+     overflow: visible;
+   }
+   .custom_page #nobilia01 a:hover img,
+   .custom_page #coat02 a:hover img,
+   .custom_page #coat03 a:hover img {
+     transform: scale(1.05);
+   }
+   .custom_page .title_img {
+     width: 90%;
+     max-width: 700px;
+     margin: 200px 0 50px 0;
+   }
+   .custom_page .product_columns {
+     display: flex;
+     justify-content: space-between;
+   }
+   .custom_page .left-container {
+     flex-basis: 48%;
+   }
+   .custom_page .show-btn {
+     text-align: center;
+     border: solid 1px black;
+     color: black;
+     text-decoration: none;
+     width: 100%;
+     max-width: 280px;
+     padding: 5px 0;
+     transition: 0.3s;
+   }
+   .custom_page .show-btn:hover {
+     opacity: 0.5;
+   }
+   .custom_page .right-container {
+     position: relative;
+     flex-basis: 48%;
+   }
+   .custom_page .right-container img {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+   }
+   .custom_page .price_columns {
+     display: flex;
+     text-decoration: none;
+     margin: 25px 0;
+   }
+   .custom_page .price_column {
+     flex-basis: 42%;
+   }
+   .custom_page .price_column a {
+     text-decoration: none;
+     color: black;
+     transition: 0.3s;
+   }
+   .custom_page .price_column a:hover {
+     opacity: 0.5;
+   }
+   .custom_page .recommend_btn {
+     text-align: center;
+     background: #bab9a5;
+     color: white;
+     text-decoration: none;
+     font-size: 25px;
+     font-weight: 200;
+     width: 100%;
+     max-width: 400px;
+     margin: 60px auto 60px;
+     padding: 10px 0;
+     transition: 0.3s;
+   }
+   .custom_page .recommend_btn:hover {
+     opacity: 0.8;
+   }
+   @media (min-width: 980px) {
+     .custom_page .sp-only2 {
+       display: none;
+     }
+   }
+   @media (max-width: 979px) {
+     .custom_page .pc-only2 {
+       display: none;
+     }
+     .custom_page #nobilia01,
+   .custom_page #coat02,
+   .custom_page #coat03 {
+       max-width: 400px;
+     }
+     .custom_page .title_img {
+       margin: 60px 0 20px;
+     }
+     .custom_page .product_columns,
+   .custom_page .left-container {
+       display: inline;
+     }
+     .custom_page .price_columns a {
+       font-size: 16px;
+       margin: auto;
+     }
+     .custom_page .price_column {
+       flex-basis: 50%;
+       margin: auto;
+     }
+     .custom_page .right-container {
+       margin-top: 60px;
+     }
+     .custom_page .right-container p {
+       font-size: 14px;
+       margin-top: 30px;
+     }
+     .custom_page .right-container img {
+       position: static;
+     }
+     .custom_page .show-btn {
+       font-size: 14px;
+       margin: 0 auto 20px;
+       width: 80%;
+       max-width: 220px;
+       text-align: center;
+     }
+     .custom_page .recommend_btn {
+       font-size: 17px;
+       width: 90%;
+       margin: 40px auto 10px;
+     }
+   }
+   @media (max-width: 499px) {
+     .custom_page .price_columns a {
+       font-size: 3.3vw;
+     }
+   }
+   .custom_page #recommend {
+     background: #f3f3f3;
+     margin-top: 200px;
+   }
+   .custom_page .recommend-inner {
+     display: flex;
+     width: 95%;
+     max-width: 1000px;
+     margin: auto;
+     padding: 20px 0 60px;
+     justify-content: space-between;
+   }
+   .custom_page #recommend h3 {
+     font-weight: 400;
+     text-align: center;
+     padding: 40px 0 10px;
+     letter-spacing: 5px;
+     font-size: 45px;
+     font-family: "Noto Sans JP", sans-serif;
+     letter-spacing: 0;
+   }
+   .custom_page #recommend p {
+     font-size: 14px;
+     margin-top: 10px;
+     min-height: 50px;
+   }
+   .custom_page .recommend-btn img {
+     transition: 0.3s;
+   }
+   .custom_page .recommend-btn img:hover {
+     transform: none;
+     opacity: 0.8;
+   }
+   .custom_page .recommend-btn {
+     text-decoration: none;
+     color: black;
+     overflow: hidden;
+     margin-bottom: 30px;
+   }
+   .custom_page .reco_top,
+   .custom_page .reco_bottom {
+     flex-basis: 49%;
+   }
+   @media (max-width: 979px) {
+     .custom_page #recommend {
+       margin-top: 70px;
+     }
+     .custom_page .recommend-inner {
+       display: block;
+       max-width: 400px;
+       padding: 30px 0 40px;
+     }
+     .custom_page #recommend h3 {
+       font-size: 35px;
+     }
+     .custom_page .recommend-btn {
+       width: 100%;
+       margin-bottom: 40px;
+     }
+   }
+   @media (max-width: 499px) {
+     .custom_page #recommend p {
+       font-size: 2.8vw;
+       letter-spacing: 0;
+     }
+     .custom_page .recommend-btn {
+       margin-bottom: 20px;
+     }
+   }
