@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Sawarabi Mincho", serif;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 10px;
+}
+body {
+    min-width: none !important;
+}
+@media (min-width: 980px) {
+    .sp-num {
+        display: none;
+    }
+}
+@media (max-width: 979px) {
+    .pc-num {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    .sp-only {
+        display: none;
+    }
+}
+@media (max-width: 599px) {
+    .pc-only {
+        display: none;
+    }
+}
+
+p {
+    font-size: 16px;
+}
+@media (max-width: 979px) {
+    p {
+        font-size: 12px;
+    }
+}
+
+a {
+    display: block;
+    overflow: hidden;
+}
+img {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+a img:hover {
+    transform: scale(1.1);
+}
+.img-full {
+    width: 100%;
+}
+.img-normal {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.custom_page {
+    margin: auto;
+    width: 100%;
+}
+.container-top-img {
+    width: 100%;
+}
+
+#xmas-top {
+    display: flex;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#xmas-top p {
+    display: block;
+    flex-basis: 45%;
+    padding: 40px;
+    background-color:#913a2a;
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8;
+}
+#xmas-top a {
+    flex-basis: 27%;
+}
+@media (max-width: 979px) {
+    #xmas-top {
+        max-width: 400px;
+    }
+    #xmas-top p {
+        flex-basis: 100%;
+        font-size: 14px;
+        padding: 40px 30px;
+        margin-bottom: 10px;
+    }
+    #xmas-top a {
+        flex-basis: 49%;
+    }
+}
+
+.img-snow {
+    width: 95%;
+    margin: 50px auto;
+}
+.top-txt {
+    margin: 80px 0;
+    text-align: center;
+}
+.item-detail {
+    font-size: 14px;
+    color: black;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.item-detail:last-child {
+    margin-top: 20px;
+}
+.item-detail b {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Sawarabi Gothic", sans-serif;
+    color: black;
+    text-decoration: underline;
+}
+.item-detail:hover {
+    text-decoration: underline;
+}
+@media (max-width: 979px) {
+    .top-txt {
+        width: 95%;
+        font-size: 12px;
+        margin: 40px auto;
+    }
+    .item-detail {
+        font-size: 12px;
+    }
+    .item-detail b {
+        font-size: 14px;
+    }
+}
+
+
+/**** デコール ****/
+#decor {
+    margin: 160px auto;
+}
+.decor_container {
+    width: 95%;
+    margin: auto;
+}
+.decor_line {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.decor_line-rtl {
+    flex-direction: row-reverse;
+}
+.decor_item-img {
+    display: flex;
+    flex-basis: 65%;
+    justify-content: space-between;
+}
+.decor_item-img a {
+    width: 100%;
+}
+.decor_item-L {
+    flex-basis: 70%;
+}
+.decor_item-R {
+    position: relative;
+    flex-basis: calc(30% - 10px);
+}
+.decor_item-R a:last-child {
+    margin-top: 13px;
+}
+.decor_3-L {
+    flex-basis: 60%;
+}
+.decor_3-R {
+    flex-basis: calc(40% - 10px);
+}
+.decor_item {
+    position: relative;
+    flex-basis: calc(35% - 40px);
+}
+.decor_item p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.decor_line-5 > * {
+    flex-basis: calc(50% - 20px);
+}
+@media (max-width: 979px) {
+    #decor {
+        margin: 80px auto;
+    }
+    .decor_line {
+        display: block;
+        max-width: 400px;
+        padding-bottom: 60px;
+    }
+    .decor_item {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .decor_item p {
+        font-size: 12px;
+    }
+    .decor_item p:last-child {
+        position: static;
+    }
+    .decor_item-R {
+        position: relative;
+        flex-basis: calc(30% - 5px);
+    }
+    .decor_item-R a:last-child {
+        margin-top: 5px;
+    }
+    .decor_3-L,
+    .decor_3-R {
+        flex-basis: calc(50% - 2.5px);
+    }
+    .decor_line-5 .decor_item-img {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+
+/**** LED ****/
+#led {
+    margin-bottom: 100px;
+}
+.led-container {
+    width: 95%;
+    margin: auto;
+}
+.led_line {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 0;
+    justify-content: space-between;
+}
+
+.led_item-img {
+    display: block;
+    flex-basis: 45%;
+}
+.led_line-rtl {
+    flex-direction: row-reverse;
+}
+.led_item {
+    position: relative;
+    flex-basis: calc(55% - 20px);
+}
+.led_item p {
+    margin: 30px 0;
+    font-size: 14px;
+}
+.led_item img:last-child {
+    position: absolute;
+    bottom: 0;
+}
+.led_product-container {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    margin: 60px auto 120px;
+    justify-content: space-between;
+}
+.led_product {
+    flex-basis: 49%;
+}
+.led_product p {
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 979px) {
+    .led_item-img {
+        margin-bottom: 20px;
+    }
+    .led_line {
+        display: block;
+        max-width: 400px;
+        padding-bottom: 0;
+    }
+    .led_item {
+        text-align: center;
+    }
+    .led_item p {
+        font-size: 12px;
+    }
+    .led_item img:last-child {
+        position: static;
+    }
+    .led_product-container {
+        max-width: 400px;
+        margin: 30px auto 80px;
+        text-align: center;
+    }
+}
+
+
+
+/* レコメンド */
+.recommend {
+    background: #f3f3f3;
+}
+.recommend-title {
+    position: relative;
+    top: -25px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.recommend-inner {
+    display: flex;
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0 60px;
+    justify-content: space-between;
+}
+.recommend-btn {
+    width: calc(50% - 20px);
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+}
+.recommend-btn div {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.recommend-btn img:hover {
+    transform: none;
+    opacity: .8;
+}
+@media (max-width: 979px) {
+    .recommend-inner {
+        display: block;
+        max-width: 400px;
+        padding: 30px 0 40px;
+    }
+    .recommend-btn {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 499px) {
+    .recommend-title {
+        top: -20px;
+        font-size: 6.5vw;
+    }
+    .recommend-btn {
+        text-align: left;
+    }
+}
